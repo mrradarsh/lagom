@@ -1624,6 +1624,31 @@
         padding: 3rem 1.5rem 2rem;
         gap: 2rem;
       }
+      .eyebrow {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+      }
+      .eyebrow-text {
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
+        white-space: normal;
+        text-align: center;
+      }
+      .eyebrow-line {
+        width: 20px;
+      }
+      .strip-loc {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        line-height: 1.4;
+        width: 100%;
+      }
       .services-section {
         padding: 4rem 0;
       }
@@ -1648,6 +1673,18 @@
       .contact-right {
         padding: 1.5rem;
       }
+      .contact-right::before {
+        right: 0 !important;
+        bottom: 0 !important;
+      }
+      .pricing-tabs-wrapper {
+        max-width: 100% !important;
+      }
+      html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
       footer {
         padding: 2rem 1.5rem;
       }
@@ -1659,8 +1696,12 @@
         letter-spacing: 0.25em;
       }
       .logo-sub {
-        font-size: 0.65rem;
-        letter-spacing: 0.45em;
+        font-size: 0.6rem !important;
+        letter-spacing: 0.18em !important;
+        text-align: center;
+      }
+      .nav-links {
+        gap: 1rem !important;
       }
       .nav-tel {
         font-size: 1rem;
@@ -1668,6 +1709,16 @@
       h1 {
         font-size: 2.3rem !important;
         line-height: 1.15;
+      }
+      .eyebrow-text {
+        font-size: 0.72rem !important;
+        letter-spacing: 0.08em !important;
+        white-space: normal !important;
+        text-align: center;
+        width: 100%;
+      }
+      .eyebrow-line {
+        display: none !important;
       }
       .hero-desc {
         font-size: 0.95rem;
@@ -1679,21 +1730,47 @@
       .sec-count {
         font-size: 3rem;
       }
+      .salon-visual {
+        padding: 0.5rem !important;
+      }
+      .visual-frame {
+        padding: 1rem 0.5rem !important;
+      }
+      .visual-inner {
+        padding: 1.2rem 0.8rem !important;
+      }
       .stat-row {
-        grid-template-columns: repeat(3, 1fr) !important; /* Keep horizontal but smaller */
+        grid-template-columns: repeat(3, 1fr) !important; /* Keep horizontal but highly compact */
+        margin-top: 1.2rem;
+      }
+      .stat {
+        padding: 0.8rem 0.2rem !important;
+        border-right: 1px solid rgba(184, 150, 62, 0.15) !important;
+        border-bottom: none !important;
+      }
+      .stat:last-child {
+        border-right: none !important;
       }
       .stat-n {
-        font-size: 1.3rem;
+        font-size: 1.2rem !important;
       }
       .stat-l {
-        font-size: 0.7rem;
-        letter-spacing: 0.1em;
+        font-size: 0.58rem !important;
+        letter-spacing: 0.04em !important;
+        line-height: 1.2;
+      }
+      .strip-loc {
+        font-size: 0.78rem !important;
+        letter-spacing: 0.04em !important;
+        padding: 0 0.5rem !important;
       }
       .price-name {
-        font-size: 1rem;
+        font-size: 0.95rem !important;
+        white-space: normal !important;
+        word-break: break-word !important;
       }
       .price-val {
-        font-size: 1.05rem;
+        font-size: 1rem !important;
       }
       .pricing-cta {
         padding: 1.5rem 1rem;
@@ -1714,15 +1791,6 @@
       }
       .hero-left {
         width: 100% !important;
-      }
-      .salon-visual {
-        padding: 1rem !important;
-      }
-      .visual-frame {
-        padding: 1.5rem !important;
-      }
-      .visual-inner {
-        padding: 1.5rem 1rem !important;
       }
       html, body {
         overflow-x: hidden !important;
