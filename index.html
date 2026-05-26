@@ -1581,6 +1581,126 @@
         justify-content: flex-start;
       }
     }
+
+    /* ─── ULTIMATE MOBILE RESPONSIVENESS AND REFINEMENTS ─── */
+    @media (max-width: 1024px) {
+      .category-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+      }
+      .category-column.full-width {
+        grid-column: span 1 !important;
+      }
+      .category-inner-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.5rem;
+      }
+      .pricing-menu-section {
+        padding: 4rem 1.5rem;
+      }
+      .pricing-tabs-wrapper {
+        justify-content: flex-start !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        mask-image: linear-gradient(to right, black 85%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      }
+      .pricing-tabs {
+        margin: 0 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 1.5rem;
+      }
+      .hero {
+        padding: 3rem 1.5rem 2rem;
+        gap: 2rem;
+      }
+      .services-section {
+        padding: 4rem 0;
+      }
+      .sec-header {
+        padding: 0 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      .pricing-menu-section {
+        padding: 4rem 1rem;
+      }
+      .category-column {
+        padding: 1.5rem;
+      }
+      .about-section {
+        padding: 4rem 1.5rem;
+        gap: 2.5rem;
+      }
+      .contact-section {
+        padding: 4rem 1.5rem;
+        gap: 2.5rem;
+      }
+      .contact-right {
+        padding: 1.5rem;
+      }
+      footer {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-top {
+        font-size: 1.3rem;
+        letter-spacing: 0.25em;
+      }
+      .logo-sub {
+        font-size: 0.65rem;
+        letter-spacing: 0.45em;
+      }
+      .nav-tel {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 2.3rem !important;
+        line-height: 1.15;
+      }
+      .hero-desc {
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+      .sec-title {
+        font-size: 1.8rem !important;
+      }
+      .sec-count {
+        font-size: 3rem;
+      }
+      .stat-row {
+        grid-template-columns: repeat(3, 1fr) !important; /* Keep horizontal but smaller */
+      }
+      .stat-n {
+        font-size: 1.3rem;
+      }
+      .stat-l {
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+      }
+      .price-name {
+        font-size: 1rem;
+      }
+      .price-val {
+        font-size: 1.05rem;
+      }
+      .pricing-cta {
+        padding: 1.5rem 1rem;
+      }
+      .pricing-cta-title {
+        font-size: 1.2rem;
+      }
+      .pricing-cta-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+      }
+    }
   </style>
 
   <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Lagom Unisex
