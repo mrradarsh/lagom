@@ -1599,14 +1599,20 @@
         padding: 4rem 1.5rem;
       }
       .pricing-tabs-wrapper {
-        justify-content: flex-start !important;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        mask-image: linear-gradient(to right, black 85%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 0 0.8rem 0 !important;
+        margin: 0 auto !important;
       }
       .pricing-tabs {
+        display: flex !important;
+        justify-content: flex-start !important;
+        gap: 0.6rem !important;
+        padding: 0 1.5rem !important;
         margin: 0 !important;
+        width: max-content !important;
       }
     }
 
